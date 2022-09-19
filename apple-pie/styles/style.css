@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 25px;
+}
+
+#intro-section {
+    height: 900px;
+}
+
+#main-title {
+    font-size: 5rem;
+    height: 580px;
+    color: white;
+    margin-top: 0;
+    padding-top: 220px;
+    text-align: center;
+    background-image: url("../images/apple-pie.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#text-intro {
+    font-size: 25px;
+    width: 900px;
+    padding-left: 20px;
+    margin: 20px auto 40px;
+}
+
+#recipe-info {
+    display: block;
+    width: 420px;
+    margin: 30px auto;
+}
+
+.line {
+    border: solid 1px darkgrey;
+    width: 850px;
+    margin: auto;
+}
+
+#ingredients-section {
+    height: 460px;
+}
+
+h2 {
+    width: 200px;
+    margin: 15px 0 20px 140px;
+}
+
+#ingredients-list {
+    width: 500px;
+    margin: 10px 0 0 140px;
+    padding-left: 20px;
+}
+
+#cooking-info {
+    display: block;
+    width: 400px;
+    margin: 25px auto;
+}
+
+#ingredients-list li {
+    padding: 2px 0;
+    font-size: 18px;
+}
+
+#ingredients-list li::marker {
+    content: "- ";
+}
+
+#directions-section {
+    height: 280px;
+}
+
+ol {
+    margin: 10px 0 0 125px;
+    width: 800px;
+    font-size: 18px;
+    counter-reset: list;
+}
+
+ol li {
+    list-style: none;
+    padding: 2px 0;
+} 
+
+ol li::before {
+    content: counter(list) ") ";
+    counter-increment: list; 
+}
